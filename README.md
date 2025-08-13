@@ -7,7 +7,6 @@ This repository is the official baseline project for the SLAM FPGA Algorithm Com
 ## Contest & Communication
 
 - **Official Contest Page**: Please check the official contest website for detailed rules and procedures.
-- **Q&A and Support**: Join the official Slack workspace ([invite link: xxxxxx]) for questions and technical communication.
 
 ---
 
@@ -95,7 +94,7 @@ Please refer to the official contest page for detailed rules, dataset download l
 For technical discussions and support, join the official Slack workspace (link provided above).
 If you encounter environment setup or code running issues, please first consult env_setup.md and README.md. For further questions, please ask in the Slack group.
 
-基本运行流程。
+运行流程。
 # 1. 安装依赖环境
 ## 1.1 安装C++依赖
 更新软件源
