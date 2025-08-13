@@ -15,7 +15,7 @@ This repository is the official baseline project for the SLAM FPGA Algorithm Com
 
 ### 1. Kria KV260 Board OS Setup
 
-- Follow the [Xilinx official getting started guide](https://www.xilinx.com/products/som/kria/kv260-vision-starter-kit/kv260-getting-started/getting-started.html) to install Ubuntu 22.04 on your Kria KV260 board.
+- Follow the [Xilinx official getting started guide](https://www.releases.ubuntu.com/focal/) to install Ubuntu 20.04 on your Kria KV260 board.
 - **Boot Firmware Note**: If you have boot firmware (Boot FW) compatibility issues at first boot:
     - First boot with Ubuntu 20.04, install the Xilinx software tools.
     - Use the `xlnx-config --xmutil <cmd>` utility to update the firmware, following the [official instructions](https://xilinx-wiki.atlassian.net/wiki/spaces/A/pages/1641152513/Kria+K26+SOM#Boot-FW-update-with-xmutil).
