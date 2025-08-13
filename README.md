@@ -58,18 +58,23 @@ See README.md for further dataset organization examples.
 
 ### 3. Environment Setup
 #### 3.1 C++ and PCL Environment
+```
 sudo apt update
 sudo apt install -y cmake libpcl-dev libeigen3-dev
+```
 #### 3.2 Python Dependencies
+```
 sudo apt install -y python3 python3-pip
 pip3 install -r requirements.txt
-####3.3 Build the Project
-bash
+```
+#### 3.3 Build the Project
+```
 mkdir -p build
 cd build
 cmake ../src
 make -j4
 cd ..
+```
 ### 4. Running & Evaluation
 #### 4.1 One-Click Run (Recommended)
 bash
