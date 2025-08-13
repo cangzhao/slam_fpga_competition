@@ -38,6 +38,7 @@ git clone <your_project_git_url>
 cd slam_fpga_competition
 Directory Structure:
 
+```text
 slam_fpga_competition/
 ├── src/                 # Main program and algorithm directory
 │   ├── main.cpp         # Main entry point
@@ -73,18 +74,15 @@ mkdir -p build
 cd build
 cmake ../src
 make -j4
-cd ..
 ```
 ### 4. Running & Evaluation
 #### 4.1 One-Click Run (Recommended)
-bash
+```
+cd ..
 bash scripts/run_host.sh
+```
 This script will automatically build (if not already built), run SLAM localization, and output the trajectory to output/results/.
 It will also automatically evaluate localization accuracy and save results in output/logs/eval.log.
-#### 4.2 Manual Run
-bash
-./build/main data/kitti/00/velodyne data/kitti/00/groundtruth.txt
-python3 scripts/evaluate.py output/results/traj_est.txt output/results/traj_gt.txt
 ### 5. Output Files
 output/results/traj_est.txt: Estimated trajectory from your algorithm
 output/results/traj_gt.txt: Ground truth trajectory
