@@ -51,7 +51,7 @@ slam_fpga_competition/
 ├── README.md            # Quick start guide
 ├── env_setup.md         # Environment dependency instructions
 ├── requirements.txt     # Python dependencies
-
+```
 ### 2. Dataset Preparation
 Download and organize the KITTI dataset into data/kitti/00/velodyne/ (bin files).
 Place the ground truth trajectory as data/kitti/00/groundtruth.txt.
