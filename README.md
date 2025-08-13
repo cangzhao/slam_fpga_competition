@@ -1,4 +1,3 @@
-markdown
 # SLAM FPGA Competition Project Instructions
 
 This repository is the official baseline project for the SLAM FPGA Algorithm Competition, providing a complete point cloud localization demo framework. Please read this document carefully before environment setup and algorithm development.
@@ -35,7 +34,6 @@ This repository is the official baseline project for the SLAM FPGA Algorithm Com
 
 Clone the repository on your host or the development board:
 
-```bash
 git clone <your_project_git_url>
 cd slam_fpga_competition
 Directory Structure:
@@ -52,41 +50,41 @@ slam_fpga_competition/
 ├── README.md            # Quick start guide
 ├── env_setup.md         # Environment dependency instructions
 ├── requirements.txt     # Python dependencies
-2. Dataset Preparation
+
+### 2. Dataset Preparation
 Download and organize the KITTI dataset into data/kitti/00/velodyne/ (bin files).
 Place the ground truth trajectory as data/kitti/00/groundtruth.txt.
 See README.md for further dataset organization examples.
-3. Environment Setup
-3.1 C++ and PCL Environment
-bash
+
+### 3. Environment Setup
+#### 3.1 C++ and PCL Environment
 sudo apt update
 sudo apt install -y cmake libpcl-dev libeigen3-dev
-3.2 Python Dependencies
-bash
+#### 3.2 Python Dependencies
 sudo apt install -y python3 python3-pip
 pip3 install -r requirements.txt
-3.3 Build the Project
+####3.3 Build the Project
 bash
 mkdir -p build
 cd build
 cmake ../src
 make -j4
 cd ..
-4. Running & Evaluation
-4.1 One-Click Run (Recommended)
+### 4. Running & Evaluation
+#### 4.1 One-Click Run (Recommended)
 bash
 bash scripts/run_host.sh
 This script will automatically build (if not already built), run SLAM localization, and output the trajectory to output/results/.
 It will also automatically evaluate localization accuracy and save results in output/logs/eval.log.
-4.2 Manual Run
+#### 4.2 Manual Run
 bash
 ./build/main data/kitti/00/velodyne data/kitti/00/groundtruth.txt
 python3 scripts/evaluate.py output/results/traj_est.txt output/results/traj_gt.txt
-5. Output Files
+### 5. Output Files
 output/results/traj_est.txt: Estimated trajectory from your algorithm
 output/results/traj_gt.txt: Ground truth trajectory
 output/logs/: Logs and evaluation results for each step
-6. Algorithm Extension
+### 6. Algorithm Extension
 Teams can implement or replace their own SLAM algorithm in the src/slam_algorithm/ directory. Please refer to the interface in icp_localization.hpp.
 As long as the interface remains consistent, your implementation can be seamlessly tested and evaluated by the framework.
 Reference & Technical Support
