@@ -91,8 +91,6 @@ Teams can implement or replace their own SLAM algorithm in the src/slam_algorith
 As long as the interface remains consistent, your implementation can be seamlessly tested and evaluated by the framework.
 Reference & Technical Support
 Please refer to the official contest page for detailed rules, dataset download links, and evaluation standards.
-For technical discussions and support, join the official Slack workspace (link provided above).
-If you encounter environment setup or code running issues, please first consult env_setup.md and README.md. For further questions, please ask in the Slack group.
 
 运行流程。
 # 1. 安装依赖环境
