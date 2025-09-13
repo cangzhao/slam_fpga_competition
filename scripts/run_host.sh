@@ -22,4 +22,4 @@ cd ..
 evo_ape kitti output/results/traj_gt.txt output/results/traj_est.txt -a | tee output/logs/eval.log
 echo "" >> output/logs/eval.log
 evo_rpe kitti output/results/traj_gt.txt output/results/traj_est.txt -a | tee -a output/logs/eval.log
-evo_traj kitti /home/cangzhao/slam_fpga_competition/output/results/traj_est.txt --ref /home/cangzhao/slam_fpga_competition/output/results/traj_gt.txt -p -a
+evo_traj kitti output/results/traj_est.txt --ref output/results/traj_gt.txt -p -a
