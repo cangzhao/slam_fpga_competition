@@ -55,10 +55,11 @@ Place the ground truth trajectory as data/kitti/00/groundtruth.txt.
 See README.md for further dataset organization examples.
 
 ### 3. Environment Setup
-#### 3.1 C++ and PCL Environment
+#### 3.1 C++ and Environment
 ```
 sudo apt update
 sudo apt install -y cmake libpcl-dev libeigen3-dev
+pip install evo --upgrade --no-binary evo
 ```
 #### 3.2 Python Dependencies
 ```
